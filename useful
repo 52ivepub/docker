@@ -1,0 +1,10 @@
+docker login yourregistry.yourdomain.com  # авторизация 
+
+
+"docker build ." # создать контейнер
+
+"docker build -t some_image ." # создать контейнер с именем "some_image"
+
+'docker rmi -f ca1a37421e70'  # удалить докер с id ca1a37421e70
+
+'docker logs ca1a37421e70' # постмотреть лог контейнера 
