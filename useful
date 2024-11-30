@@ -1,4 +1,4 @@
-docker login yourregistry.yourdomain.com  # авторизация 
+'docker login yourregistry.yourdomain.com'  # авторизация 
 
 
 "docker build ." # создать контейнер
@@ -8,3 +8,27 @@ docker login yourregistry.yourdomain.com  # авторизация
 'docker rmi -f ca1a37421e70'  # удалить докер с id ca1a37421e70
 
 'docker logs ca1a37421e70' # постмотреть лог контейнера 
+
+'docker run 8121b3d0346a'  # запуск контейнера 
+
+'1BDA3F212167D132F04DC0279363C3271CF7219D'  - # Docker Desktop
+
+'docker run -it node' - # запуск контейнера 
+
+' docker ps -a ' # история запуска контейнеров 
+
+'docker container prune' # удалить все не используемые контейнеры 
+
+'COPY logs-app /app' #  откуда скопировать и куда  app
+
+'docker run -p 3000:3000  85ba079c09b5' # запустиь контейнер с портом 3000 и ID 85ba079c09b5
+
+'docker run -d -p 80:3000  85ba079c09b5  ' #-d - означает на погружаться в это процесс консоли
+
+'docker logs vibrant_kapitsa'  # посмотреть лог докера
+
+'docker run -d -p 3000:3000 --name logsapp  app3' # запустить докер app3 с именем logsapp
+
+'docker image prune'  # удалить все неиспользуемые образы
+
+'docker build -t app:01 .' # создать образ с тэгом <01>
