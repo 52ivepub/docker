@@ -32,3 +32,8 @@
 'docker image prune'  # удалить все неиспользуемые образы
 
 'docker build -t app:01 .' # создать образ с тэгом <01>
+'docker run -d -p 3000:3000 --name logsapp  app:01'
+
+'docker push busyginzz/app:latest' # запушить на докер хаб приложение busyginzz/app:latest и создастся репозитория именем   busyginzz/app
+
+'docker pull busyginzz/app' # скачать с докерхаба контейнер 
