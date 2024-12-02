@@ -37,3 +37,8 @@
 'docker push busyginzz/app:latest' # запушить на докер хаб приложение busyginzz/app:latest и создастся репозитория именем   busyginzz/app
 
 'docker pull busyginzz/app' # скачать с докерхаба контейнер 
+
+'docker run -d -p 3000:3000 --rm --name app busyginzz/app' # --rm значит удалить контейнер сразу после его останвоки, 
+
+# ---- В Makefile можно создавать короткие команды -----
+
