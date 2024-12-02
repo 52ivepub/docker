@@ -40,5 +40,12 @@
 
 'docker run -d -p 3000:3000 --rm --name app busyginzz/app' # --rm значит удалить контейнер сразу после его останвоки, 
 
-# ---- В Makefile можно создавать короткие команды -----
+# ---- В Makefile можно создавать короткие команды ----- для этого в консоли нужно написать make и команду которая прописана в Makefile
 
+'docker run -d -p 3000:3000 -v logs:/app/data --rm  --name logsapp logsapp:volumes'  # запустить докер с базой данных, которая будет храниться даже если его убьют (-v logs:/app/data), где logs это название volume,а остальное это его путь
+
+'docker volume ls ' # список volume
+
+'docker volume inspect logs' # посмтреть инфу по volume по имени logs
+
+'docker volume prune' # удалить volume 
